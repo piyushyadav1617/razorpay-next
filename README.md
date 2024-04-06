@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Integrating Razorpay with Next.js: A Step-by-Step Guide
 
-First, run the development server:
+If you're selling a product or service targeting Indian audiences, then you may be using or thinking about using **Razorpay**. Razorpay is a payment gateway company that helps you accept payments online. It is being used by a wide range of companies, from Zoho to Zomato. They also offer other services like credit cards and payroll banking APIs.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Clone the repo and install the depedencies 
+   ```bash
+   git clone https://github.com/piyushyadav1617/razorpay-next.git
+   cd razorpay-next
+   npm install
+   ```
+## Install razorpay & Get API Keys
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Install the necessary packages in your backend:
+   ```bash
+   npm install razorpay
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Obtain your API credentials from the Razorpay dashboard (choose test/live mode). Set up the environment variables in your app:
+   ```bash
+   RAZORPAY_ID="rzp_test_YOUR_API_ID"
+   RAZORPAY_KEY="YOUR_API_KEY"
+   ```   
+### pricing page
+![screenshot1](pricing.png)
 
-## Learn More
+### checkout page
+![screenshot1](checkout.png)
 
-To learn more about Next.js, take a look at the following resources:
+### razorpay window
+![screenshot1](rzp_window.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
