@@ -19,8 +19,8 @@ If you're selling a product or service targeting Indian audiences, then you may 
 
 2. Obtain your API credentials from the Razorpay dashboard (choose test/live mode). Set up the environment variables in your app:
    ```bash
-   RAZORPAY_ID="rzp_test_YOUR_API_ID"
-   RAZORPAY_KEY="YOUR_API_KEY"
+   key_id="rzp_test_YOUR_API_ID"
+   key_secret="YOUR_API_KEY"
    ```   
 ### pricing page
 ![screenshot1](pricing.png)
